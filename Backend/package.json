@@ -1,0 +1,30 @@
+{
+  "name": "kitabghar",
+  "version": "1.0.0",
+  "description": "Mern project",
+  "homepage": "https://github.com/Rajanjha12/KitabGhar#readme",
+  "bugs": {
+    "url": "https://github.com/Rajanjha12/KitabGhar/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rajanjha12/KitabGhar.git"
+  },
+  "license": "ISC",
+  "author": "Rajan Jha",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "moongoose": "^0.0.5",
+    "nodemon": "^3.1.9"
+  }
+}
