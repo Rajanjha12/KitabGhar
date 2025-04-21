@@ -69,18 +69,7 @@ const Navbar = () => {
               </label>
             </div>
 
-            {/* Theme Toggle */}
-            <label className="swap swap-rotate">
-              <input type="checkbox" onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')} checked={theme === 'dark'} />
-              {/* Light icon */}
-              <svg className="swap-off h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M5.64,17l-.71.71a1...Z" />
-              </svg>
-              {/* Dark icon */}
-              <svg className="swap-on h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M21.64,13a1...Z" />
-              </svg>
-            </label>
+          
 
             {
   authUser ? (
