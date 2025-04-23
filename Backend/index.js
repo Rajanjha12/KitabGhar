@@ -23,6 +23,9 @@ const URI = process.env.MONGODB_URI;
  } catch(error){
     console.log('MongoDB connection error:', error);
  }
+ app.get("/", (req, res) => {
+      res.send("Welcome to the Book Store API")
+   })
  //difining routes
  app.use("/book",bookRoute);
     app.use("/user",userRoute); 
