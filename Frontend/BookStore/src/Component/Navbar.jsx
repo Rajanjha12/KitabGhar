@@ -70,6 +70,7 @@ const Navbar = () => {
             </div>
 
           
+
             {
   authUser ? (
     <Logout />
