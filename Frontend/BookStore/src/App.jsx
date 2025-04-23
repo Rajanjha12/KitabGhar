@@ -9,7 +9,7 @@ import Signup from './Component/Signup'
 import Contacts from './Contact/Contacts'
 import { useAuth } from './Context/AuthProvider'
 import  { Toaster } from 'react-hot-toast';
-import About from './Component/About'
+import About from './About/About'
 function App() {
   const [count, setCount] = useState(0)
   const [authUser, setAuthUser] = useAuth();
