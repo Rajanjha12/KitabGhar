@@ -6,16 +6,15 @@ import cors from 'cors'
 import userRoute from './route/user.route.js'
 
 const app = express();
- const allowedOrigins = [
-  'https://kitab-ghar-6odf.vercel.app',
-  'http://localhost:5173'
-];
+ 
 
+// Add this in your backend setup
 app.use(cors({
-  origin: allowedOrigins,
+  origin: ['https://kitab-ghar-6odf.vercel.app', 'https://kitab-ghar-5aef.vercel.app'], // Add the correct URLs
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
+
 
 //use json middleware for parsing json data
 app.use(express.json());
