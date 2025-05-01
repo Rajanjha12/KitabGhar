@@ -6,7 +6,17 @@ import cors from 'cors'
 import userRoute from './route/user.route.js'
 
 const app = express();
-app.use(cors());
+ const allowedOrigins = [
+  'https://kitab-ghar-6odf.vercel.app',
+  'http://localhost:5173'
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+
 //use json middleware for parsing json data
 app.use(express.json());
 dotenv.config();
